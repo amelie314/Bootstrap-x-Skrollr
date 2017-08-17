@@ -1,8 +1,10 @@
-$color_purple: #D2B0CC
-$color_blue: #113285
+$color_purple: #6A4C9C
+$color_blue: #4FA7B2
+$color_orange: #FFB11B
+$color_dark_grey: #301e15
 
 *
-  border: solid 1px black
+  // border: solid 1px black
   font-family: 微軟正黑體
   
 body
@@ -10,7 +12,7 @@ body
 
 header.jumbotron
   text-align: center
-  background-image: url(https://assets.wired.com/photos/w_1720/wp-content/uploads/2017/03/MilkyWay_TA-147851475.jpg)
+  background-image: url(http://sa.ylib.com/read/images/SM186-066.jpg)
   background-size: cover
   background-attachment: fixed
   background-position: center center
@@ -18,6 +20,10 @@ header.jumbotron
   .container
     color: white
     padding: 200px 0px
+  h1
+    color: rgba(white,1)
+    font-size: bold
+    letter-spacing: 1px
   hr
     max-width: 50px
     border: solid 2px $color_purple
@@ -28,21 +34,35 @@ section
   padding: 50px 0px
   
 section#section_ask
-  background-color: $color_purple
+  background-color: $color_orange
+  color: white
   .col-sm-5.img
-    background-image: url(http://news.xinhuanet.com/science/2016-01/19/135024253_14531920982251n.jpg)
+    background-image: url(http://media.istockphoto.com/photos/cancer-cell-picture-id466332001?k=6&m=466332001&s=612x612&w=0&h=x2s3-oGDALIfVIPSG5yi8-VBxYIoSPpVpKN1K8kAaaM=)
     height: 300px
     background-size: cover
     background-position: center center
     mix-blend-mode: multiply
-  h3
-    margin-top: 130px
+  h2
+    margin-top: 125px
+    margin-left: 10%
     padding: 0px 20px
+    font-weight: bold
 section#section_about
+  h2
+    color: $color_dark_grey
+    font-weight: bold
+    letter-spacing: 2px
   img
-    width: 80%
-    
+    width: 100%
+
   .img_wrap
-    height: 220px
+    margin-top: 10px
+    height: 195px
     overflow: hidden
+    margin-bottom: 15px
+  h4
+    color: $color_orange
+  p 
+    margin-top: 10px
+    color: white
     
