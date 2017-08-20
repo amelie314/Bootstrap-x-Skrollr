@@ -9,28 +9,30 @@ body {
 
 header.jumbotron {
   text-align: center;
-  background-image: url(http://sa.ylib.com/read/images/SM186-066.jpg);
+  background-image: url(http://res.cloudinary.com/dpdxi9nqy/image/upload/v1503123097/病毒_bkfs96.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
   margin-bottom: 0px;
+  font-weight: bold;
 }
 header.jumbotron .container {
   color: white;
   padding: 200px 0px;
 }
 header.jumbotron h1 {
-  color: white;
-  font-size: bold;
-  letter-spacing: 1px;
+  color: rgba(252, 250, 242, 0.9);
+  font-size: 72px;
+  letter-spacing: 5px;
+  font-weight: bold;
 }
 header.jumbotron hr {
   max-width: 50px;
-  border: solid 2px #6A4C9C;
+  border: solid 3px #4FA7B2;
 }
 header.jumbotron h4 {
-  color: rgba(255, 255, 255, 0.7);
-  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
 }
 
 section {
@@ -38,7 +40,7 @@ section {
 }
 
 section#section_ask {
-  background-color: #FFB11B;
+  background-color: #78c2c4;
   color: white;
 }
 section#section_ask .col-sm-5.img {
@@ -48,31 +50,57 @@ section#section_ask .col-sm-5.img {
   background-position: center center;
   mix-blend-mode: multiply;
 }
-section#section_ask h2 {
+section#section_ask h3 {
   margin-top: 125px;
   margin-left: 10%;
   padding: 0px 20px;
   font-weight: bold;
 }
 
-section#section_about h2 {
-  color: #301e15;
+section#section_about {
+  color: #0B346E;
+}
+section#section_about h2, section#section_about h4 {
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 section#section_about img {
   width: 100%;
+  border-radius: 5px;
 }
 section#section_about .img_wrap {
-  margin-top: 10px;
   height: 195px;
   overflow: hidden;
   margin-bottom: 15px;
 }
-section#section_about h4 {
-  color: #FFB11B;
-}
 section#section_about p {
   margin-top: 10px;
+}
+
+section#section_story {
+  background-color: rgba(79, 167, 178, 0.8);
   color: white;
+  padding: 10px;
+  text-align: center;
+}
+section#section_story .col-sm-5 {
+  margin-top: 30px;
+  background-image: url(http://res.cloudinary.com/dpdxi9nqy/image/upload/v1503123409/body_nkegza.png);
+  height: 400px;
+  background-size: cover;
+  mix-blend-mode: multiply;
+}
+section#section_story .col-sm-12.choose {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+section#section_story h2, section#section_story h4 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+section#section_story h2 .img_wrap, section#section_story h4 .img_wrap {
+  margin-top: 5px;
+  overflow: hidden;
+  margin-bottom: 15px;
 }
