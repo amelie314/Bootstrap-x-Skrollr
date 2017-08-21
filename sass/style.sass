@@ -1,13 +1,25 @@
 $color_purple: #6A4C9C
 $color_blue: #4FA7B2
 $color_light_blue: #78C2C4
-$color_brown: #0B346E
+$color_dark_blue: #0B346E
 *
   // border: solid 1px black
   font-family: 微軟正黑體
   
 body
   height: 1000px
+nav.navbar
+  transition: 0.5s
+  
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top
+  background-color: transparent
+  transition: 0.5s
+  a
+    color: white
+    font-weight: bold
+    &:hover
+      color: $color_dark_blue
+    
 
 header.jumbotron
   text-align: center
@@ -43,13 +55,13 @@ section#section_ask
     background-size: cover
     background-position: center center
     mix-blend-mode: multiply
-  h3
+  h2
     margin-top: 125px
     margin-left: 10%
     padding: 0px 20px
     font-weight: bold
 section#section_about
-  color: $color_brown
+  color: $color_dark_blue
   h2,h4
     font-weight: bold
     letter-spacing: 1px
@@ -61,10 +73,11 @@ section#section_about
   .img_wrap
     height: 195px
     overflow: hidden
-    margin-bottom: 15px
+    margin-bottom: 20px
   p 
     margin-top: 10px
-section#section_story
+   
+section#section_selection 
   background-color: rgba($color_blue,0.8)
   color: white
   padding: 10px
@@ -72,8 +85,9 @@ section#section_story
   .col-sm-5
     margin-top: 30px
     background-image: url(http://res.cloudinary.com/dpdxi9nqy/image/upload/v1503123409/body_nkegza.png)
-    height: 400px
+    height: 450px
     background-size: cover
+    background-position: center
     mix-blend-mode: multiply
   
   .col-sm-12.choose
@@ -87,9 +101,47 @@ section#section_story
       margin-top: 5px
       overflow: hidden
       margin-bottom: 15px
+  p
+    font-size: 15px
 section#section_future
-  
+  margin-top: 0
+  img
+    width: 100%
+  i
+    margin-top: 10px
+    font-size: 30px
+    padding: 0
+  h2
+    padding: 0px 10px
+    font-weight: bold
+  h3
+    font-weight: bold
+  p
+    font-size: 15px
     
+footer.jumbotron
+  text-align: center
+  background-image: url(http://res.cloudinary.com/dpdxi9nqy/image/upload/v1503123097/病毒_bkfs96.jpg)
+  background-size: cover
+  background-attachment: fixed
+  background-position: center center
+  font-weight: bold
+  input
+    max-width: 200px
+    margin-left: auto
+    margin-right: auto
+    background-color: transparent
+    text-align: center
+  .container
+    color: white
+    padding: 50px 0px
+  h2
+    letter-spacing: 2px
+    font-weight: bold
+  hr
+    max-width: 50px
+    border: solid 3px $color_blue
+  
   
   
     

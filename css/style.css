@@ -7,6 +7,24 @@ body {
   height: 1000px;
 }
 
+nav.navbar {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top {
+  background-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top a {
+  color: white;
+  font-weight: bold;
+}
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top a:hover {
+  color: #0B346E;
+}
+
 header.jumbotron {
   text-align: center;
   background-image: url(http://res.cloudinary.com/dpdxi9nqy/image/upload/v1503123097/病毒_bkfs96.jpg);
@@ -50,7 +68,7 @@ section#section_ask .col-sm-5.img {
   background-position: center center;
   mix-blend-mode: multiply;
 }
-section#section_ask h3 {
+section#section_ask h2 {
   margin-top: 125px;
   margin-left: 10%;
   padding: 0px 20px;
@@ -71,36 +89,90 @@ section#section_about img {
 section#section_about .img_wrap {
   height: 195px;
   overflow: hidden;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 section#section_about p {
   margin-top: 10px;
 }
 
-section#section_story {
+section#section_selection {
   background-color: rgba(79, 167, 178, 0.8);
   color: white;
   padding: 10px;
   text-align: center;
 }
-section#section_story .col-sm-5 {
+section#section_selection .col-sm-5 {
   margin-top: 30px;
   background-image: url(http://res.cloudinary.com/dpdxi9nqy/image/upload/v1503123409/body_nkegza.png);
-  height: 400px;
+  height: 450px;
   background-size: cover;
+  background-position: center;
   mix-blend-mode: multiply;
 }
-section#section_story .col-sm-12.choose {
+section#section_selection .col-sm-12.choose {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-section#section_story h2, section#section_story h4 {
+section#section_selection h2, section#section_selection h4 {
   font-weight: bold;
   letter-spacing: 1px;
   text-align: center;
 }
-section#section_story h2 .img_wrap, section#section_story h4 .img_wrap {
+section#section_selection h2 .img_wrap, section#section_selection h4 .img_wrap {
   margin-top: 5px;
   overflow: hidden;
   margin-bottom: 15px;
+}
+section#section_selection p {
+  font-size: 15px;
+}
+
+section#section_future {
+  margin-top: 0;
+}
+section#section_future img {
+  width: 100%;
+}
+section#section_future i {
+  margin-top: 10px;
+  font-size: 30px;
+  padding: 0;
+}
+section#section_future h2 {
+  padding: 0px 10px;
+  font-weight: bold;
+}
+section#section_future h3 {
+  font-weight: bold;
+}
+section#section_future p {
+  font-size: 15px;
+}
+
+footer.jumbotron {
+  text-align: center;
+  background-image: url(http://res.cloudinary.com/dpdxi9nqy/image/upload/v1503123097/病毒_bkfs96.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  font-weight: bold;
+}
+footer.jumbotron input {
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  text-align: center;
+}
+footer.jumbotron .container {
+  color: white;
+  padding: 50px 0px;
+}
+footer.jumbotron h2 {
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+footer.jumbotron hr {
+  max-width: 50px;
+  border: solid 3px #4FA7B2;
 }

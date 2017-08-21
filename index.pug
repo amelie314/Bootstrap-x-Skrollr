@@ -1,59 +1,79 @@
+//最上層一欄
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top
+  .container
+    .navbar-header
+      a.navbar-brand DRUG
+    .navbar-collapse.collapse
+      .nav.navbar-nav.navbar-right
+        li
+          a(href="#section_ask") 引言 INTRO
+        li
+          a(href="#section_about") 簡介 ABOUT
+        li
+          a(href="#section_selection") 藥物選擇 SELECTION
+        li
+          a(href="#section_future") 新藥展望 FUTURE
+ 
+//窺探腫瘤的大小事   
 header.jumbotron
   .container
-    h1 窺探腫瘤的大小事
+    h1(data-0="transform:translateY(-50px)"  data-500="transform:translateY(100px)")  窺探腫瘤的大小事
     hr
     h4 知己知彼，百戰百勝
+//關於腫瘤的疑問
 section#section_ask
   .container
     .row
       .col-sm-5.img(data-0="transform: translateX(-200px)" data-500="transform: translateY(0px)")
       .col-sm-7(data-300="opacity: 0" data-500="opacity: 1")
-        h3 若腫瘤細胞量暴增，癌症還有救嗎？
+        h2 若腫瘤細胞量暴增，<br>癌症還有救嗎？
+//腫瘤小教室
 section#section_about
   .container
     .row
-      .col-sm-12
+      .col-sm-12(data-bottom-top="transform:translateY(-70px);opacity:0" data-center="transform:translateY(0px);opacity:1")
         h2 腫瘤小教室
         hr
       .col-md-4.col-sm-6
-        .img_wrap
+        .img_wrap(data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform:translateY(0px);opacity:1")
           img(src="http://img.technews.tw/wp-content/uploads/2016/04/shutterstock_394138078-624x416.jpg")
         h4 腫瘤的偵測 (Tumor Detection)
-        p 目前癌症偵測技術仍十分有限，必須等到癌細胞成長到一定程度才偵測得到，而當達到1立方公分3以上，癌細胞成長速度相當快，這也是造成目前癌症死亡率高的部份原因，故對於腫瘤治療，部分研究是針對「如何更早偵測到癌細胞」為主要方向。
+        p(data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform:translateY(0px);opacity:1") 目前癌症偵測技術仍十分有限，必須等到癌細胞成長到一定程度才偵測得到，而當達到1立方公分3以上，癌細胞成長速度相當快，這也是造成目前癌症死亡率高的部份原因，故對於腫瘤治療，部分研究是針對「如何更早偵測到癌細胞」為主要方向。
       .col-md-4.col-sm-6
-        .img_wrap
+        .img_wrap(data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform:translateY(0px);opacity:1")
           img#3pic(src="https://i1.read01.com/uploads/0F1tChcbFv.jpg", alt="")
         h4 腫瘤的轉移 (Tumor Metastasis)
-        p 傳統上，對於癌症轉移的觀念，都認為在腫瘤後期才出現。近年來的研究認為，大部分的癌症細胞在原發部位發生初期，就已經存在所謂「轉移性表現型」，換言之，遠處轉移可能發生在癌症形成的早期階段。癌症轉移有以下3條途徑，即淋巴轉移、血行轉移和種植性轉移。
+        p(data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform:translateY(0px);opacity:1") 傳統上，對於癌症轉移的觀念，都認為在腫瘤後期才出現。近年來的研究認為，大部分的癌症細胞在原發部位發生初期，就已經存在所謂「轉移性表現型」，換言之，遠處轉移可能發生在癌症形成的早期階段。癌症轉移有以下3條途徑，即淋巴轉移、血行轉移和種植性轉移。
       .col-md-4.col-sm-6
-        .img_wrap
+        .img_wrap(data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform:translateY(0px);opacity:1")
           img(src="http://www.laspau.harvard.edu/wp-content/uploads/2016/03/IStock-000017106094Large.jpg", alt="")
         h4 治療(Treatment for Cancer)
-        p 治療方式的選擇取決於腫瘤的位置、惡性程度、發展程度以及病人身體狀態，一些實驗性治療癌症的方法也在發展當中。目前對於癌症治療方法的尋找，均是基於徹底清除癌細胞而不損害到其他的細胞的想法。
-
-section#section_story
+        p(data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform:translateY(0px);opacity:1") 治療方式的選擇取決於腫瘤的位置、惡性程度、發展程度以及病人身體狀態，一些實驗性治療癌症的方法也在發展當中。目前對於癌症治療方法的尋找，均是基於徹底清除癌細胞而不損害到其他的細胞的想法。
+//藥物選擇
+section#section_selection
   .container-fluid
     .row
-      .col-sm-5
+      .col-sm-5(data-bottom-top="background-size:150%; background-position:0% 0%;" data-center="background-size:120%; background-position:50% 50%;") 
       .col-sm-7
         .col-sm-12
           h2 抗腫瘤藥物的選擇
           hr
         .col-sm-12.choose
-          .col-sm-4
+          .col-sm-4(data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1") 
             .img_wrap
               img(src="https://image.flaticon.com/icons/svg/393/393015.svg", alt="")
-            h4 化療藥物
-          .col-sm-4
+            h4(data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1")  化療藥物
+          .col-sm-4(data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1") 
             .img_wrap
               img(src="https://image.flaticon.com/icons/svg/212/212317.svg", alt="")
-            h4 標靶藥物
-          .col-sm-4
+            h4(data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1")  標靶藥物
+          .col-sm-4(data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1") 
             .img_wrap
-              img(src="https://image.flaticon.com/icons/svg/203/203150.svg", alt="")
-            h4 其他選項
-        .col-sm-12.
-          治癌之目標則可分為治癒癌症、延長生命、減輕痛苦及安寧療護四大類。當醫師首次診斷一位癌症病患時﹐首先會依據病理切片之結果決定治療之目標為何﹐下一步是與相關科之醫師及有關醫療工作人員會商以決定治療之方向，並開始治療與定期追蹤治療效果。
+              img(src="https://image.flaticon.com/icons/svg/212/212322.svg", alt="")
+            h4(data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1")  免疫療法
+        .col-sm-12
+          p 治癌之目標則可分為治癒癌症、延長生命、減輕痛苦及安寧療護四大類。當醫師首次診斷一位癌症病患時﹐首先會依據病理切片之結果決定治療之目標為何﹐下一步是與相關科之醫師及有關醫療工作人員會商以決定治療之方向，並開始治療與定期追蹤治療效果。
+//新藥發展
 section#section_future
   .container-fluid
     .row
@@ -61,6 +81,18 @@ section#section_future
         h2 新藥發展
         hr
       .col-sm-6
-        img(src="", alt="")
-      .col-sm-6
-         
+        img(src="http://arabic.irib.ir/image/news/94061e6a5ca6fa5ad553c4a356a107ef.jpg", alt="")
+      .col-sm-6(data-bottom-top="transform:translateX(50px)" data-center="transform:translateX(0px)")
+        i.fa.fa-flask
+        h3 發展方向
+        p 目前全球約有700個新藥進入臨床研究，其中70多個進入臨床Ⅲ期試驗，估計今年不少於40個新藥可能獲得批准。這些藥物的療效和安全性將具有很高的市場需求性，適應症人群廣泛、競爭產品少，或成為治療某一疾病的標準治療藥物。其中，抗癌藥占有較大比例。
+//得知更多資訊
+footer.jumbotron
+  .container
+    h2 得知更多癌症藥物的資訊？
+    input.form-control(placeholder="Email")
+    hr
+    button.btn.btn-default 訂閱故事
+    
+    
+    
