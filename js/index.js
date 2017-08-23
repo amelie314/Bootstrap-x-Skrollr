@@ -4,4 +4,5 @@ $(window).scroll(function(evt){
   else
       $(".navbar").addClass("navbar-top");
 });
+
 var s = skrollr.init();

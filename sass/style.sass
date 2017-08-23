@@ -8,9 +8,14 @@ $color_dark_blue: #0B346E
   
 body
   height: 1000px
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
+  font-weight: bold
+  letter-spacing: 1px
+  
 nav.navbar
   transition: 0.5s
-  
+
 nav.navbar.navbar-default.navbar-fixed-top.navbar-top
   background-color: transparent
   transition: 0.5s
@@ -20,7 +25,6 @@ nav.navbar.navbar-default.navbar-fixed-top.navbar-top
     &:hover
       color: $color_dark_blue
     
-
 header.jumbotron
   text-align: center
   background-image: url(http://res.cloudinary.com/dpdxi9nqy/image/upload/v1503123097/病毒_bkfs96.jpg)
@@ -36,13 +40,11 @@ header.jumbotron
     color: rgba(252,250,242,0.9)
     font-size: 72px
     letter-spacing: 5px
-    font-weight: bold
   hr
     max-width: 50px
     border: solid 3px $color_blue
   h4
     color: rgba(white,0.8)
-    font-weight: bold
 section
   padding: 50px 0px
   
@@ -59,12 +61,9 @@ section#section_ask
     margin-top: 125px
     margin-left: 10%
     padding: 0px 20px
-    font-weight: bold
+    
 section#section_about
   color: $color_dark_blue
-  h2,h4
-    font-weight: bold
-    letter-spacing: 1px
 
   img
     width: 100%
@@ -82,6 +81,7 @@ section#section_selection
   color: white
   padding: 10px
   text-align: center
+  
   .col-sm-5
     margin-top: 30px
     background-image: url(http://res.cloudinary.com/dpdxi9nqy/image/upload/v1503123409/body_nkegza.png)
@@ -93,16 +93,17 @@ section#section_selection
   .col-sm-12.choose
     margin-top: 30px
     margin-bottom: 30px
+    
   h2,h4
-    font-weight: bold
-    letter-spacing: 1px
     text-align: center
+    
     .img_wrap
       margin-top: 5px
       overflow: hidden
       margin-bottom: 15px
   p
     font-size: 15px
+    
 section#section_future
   margin-top: 0
   img
@@ -113,9 +114,6 @@ section#section_future
     padding: 0
   h2
     padding: 0px 10px
-    font-weight: bold
-  h3
-    font-weight: bold
   p
     font-size: 15px
     
@@ -125,7 +123,6 @@ footer.jumbotron
   background-size: cover
   background-attachment: fixed
   background-position: center center
-  font-weight: bold
   input
     max-width: 200px
     margin-left: auto
@@ -137,7 +134,6 @@ footer.jumbotron
     padding: 50px 0px
   h2
     letter-spacing: 2px
-    font-weight: bold
   hr
     max-width: 50px
     border: solid 3px $color_blue
